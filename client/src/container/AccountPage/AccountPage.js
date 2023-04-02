@@ -51,9 +51,20 @@ function AccountPage(props) {
     state: -1,
     lender: ""
   });
-  const [walletBalance, setWalletBalance] = useState(0);
+  const [walletBalance, setWalletBalance] = useState("2");
   const [loading, setLoading] = useState(false);
-  const [debtors, setDebtors] = useState([]);
+  const [debtors, setDebtors] = useState([
+    {phone:"+18577468097",
+    name :"Abhay",
+    "address":"13 Tabor Place",
+    "userAddress":"0x27e1B0ccda6B73a96ab1a414e9E50c4bb5F05782"
+  },
+  {phone:"+18577468097",
+    name :"Teja Reddy",
+    "address":"13 Tabor Place",
+    "userAddress":"0x27e1B0ccda6B73a96ab1a414e9E50c4bb5F05782"
+  },
+  ]);
   const handleChangeInfor = input => event => {
     const updatedProfile = { ...information };
     updatedProfile[input] = event.target.value;
@@ -123,7 +134,7 @@ function AccountPage(props) {
           }
         }
       }
-      setDebtors(list);
+      // setDebtors(list);
     });
   }, [address]);
   useEffect(() => {
@@ -350,13 +361,12 @@ function AccountPage(props) {
             <h2>
               Wallet:&nbsp;
               <span>
-                {convertWeiToEther(walletBalance)} ETH (
-                {convertWeiToUSD(walletBalance, usdRate)} USD)
+                {convertWeiToEther("1000")} ETH (
+                {convertWeiToUSD("1000", usdRate)} USD)
               </span>
               <Button
                 variant="contained"
                 className="account__btn--pay"
-                disabled={!walletBalance}
                 onClick={withDrawWallet}
               >
                 Withdraw
