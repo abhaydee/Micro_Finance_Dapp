@@ -38,22 +38,6 @@ Off Chain Database : Firebase
 
 
 
-#### Request Loan
-
-![](./documentation/image/sequenceRequest.png)
-
-#### Lend Loan
-
-![](./documentation/image/sequenceLend.png)
-
-#### Pay Loan
-
-![](./documentation/image/sequencePayment.png)
-
-#### Redeem coupon
-
-![](./documentation/image/sequenceRedeem.png)
-
 ## Data Storage
 
 ### On-Chain
@@ -97,15 +81,7 @@ All user information and debt details are stored in Firebase Database.
 - productCode.
 - userAddr.
 
-## Smart Contract Architecture Design
 
-### DeMicroFi contracts was designed based on upgradable pattern.
-
-![](./documentation/image/upgradablePattern.png)
-
-### DeMicroFi contracts
-
-![](./documentation/image/contractarchitecture.png)
 
 ### Deployments
 
