@@ -17,13 +17,10 @@ Email : deshpande.abh@northeastern.edu, larrymowa@gmail.com
 
 ## Proposed Solution
 
-The emergence of Blockchain is a key to solve any intermediary-related problem. Lenders and Borrowers can communicate directly, all loan transactions are stored in immutable database.
-The comparision of non-Blockchain and Blockchain solution :
-| Non-Blockchain | Blockchain |
-|----------------|------------|
-| Expensive traditional audit process | Small amount of money for gas fee |
-| Truthless intermediary company | No need third party |
-| Transactions can be manipulated | Tranparent and secure transactions|
+The platform's smart contract architecture design allows for a decentralized, immutable database that ensures the equitable distribution of funds without the risk of corruption or misappropriation. The loan details, including the lender, borrower, loan amount, interest, and loan state, are stored on the on-chain database. In addition, the platform incentivizes good behavior by giving users heart tokens that can be used to redeem coupons.
+
+The proposed solution is powered by blockchain technology, which eliminates the need for intermediaries and creates a transparent, secure, and efficient micro financing process. By leveraging Al
+
 
 ## DApp Architecture Design
 
